@@ -6,28 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CryptoNews</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/queries.css">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
-    <div class="container" style="background-image: url(images/background.png);">
+    <section class="home">
         <nav>
             <img src="images/logo.png" class="logo">
             <ul>
-                <li><a href="#">Market</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">White Paper</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="#" class="link active">Home</a></li>
+                <li><a href="#" class="link">Market News</a></li>
+                <li><a href="#" class="link">White Paper</a></li>
+                <li><a href="#" class="link">Road Map</a></li>
+                <li><a href="#" class="link">Blockchain</a></li>
+                <li><a href="#" class="link">NFT Shop</a></li>
             </ul>
-            <a href="#" class="btn">EN</a>
+            <i class="fas fa-bars burger"></i>
         </nav>
         <div class="content">
-            <h1>BUY &<br>SELL <span>Crypto</span></h1>
-            <p>World's biggest Cryptocurrency exchange availible on web<br>as well as mobile phone.</p>
-            <a href="#" class="btn">EXPLORE MORE</a>
+            <div>
+                <h1>BUY &<br>SELL <span>Crypto</span></h1>
+                <p>World's biggest Cryptocurrency exchange availible on web<br>as well as mobile phone.</p>
+            </div>
+            <div class="btcReleaseContainer">
+                <h2>How old is the Bitcoin?</h2>
+                <div class="timeContainer">
+                    <div class="part">
+                        <span id="years">10</span>
+                        <h6>Years</h6>
+                    </div>
+                    <span id="bar">|</span>
+                    <div class="part">
+                        <span id="months">07</span>
+                        <h6>Months</h6>
+                    </div>
+                    <span id="bar">|</span>
+                    <div class="part">
+                        <span id="days">03</span>
+                        <h6>Days</h6>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="btn buyBtcBtn">Buy BTC</a>
+                <a href="#" class="btn whitePaperBtn"><i class="fas fa-file-pdf"></i> Bitcoin White Paper</a>
+            </div>
         </div>
-        <div class="coin-list">
+        <!-- <div class="coin-list">
             <div class="coin">
                 <img src="images/bitcoin.png" alt="">
                 <div>
@@ -49,8 +77,8 @@
                     <p>Dogecoin</p>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> -->
+    </section>
 
     <script src="script.js"></script>
 </body>
