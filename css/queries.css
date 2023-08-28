@@ -1,0 +1,83 @@
+@media (min-width: 576px) {
+    .content {
+        margin-top: 20%!important;
+    }
+
+    .content h1 {
+        font-size: 66px !important;
+    }
+    .content p{
+        line-height: 25px;
+        font-size: 22px!important;
+    }
+    .btcReleaseContainer h2 {
+        font-size: 22px!important;
+    }
+    .timeContainer{
+        font-size: 25px!important;
+    }
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-top: 15%!important;
+    }
+
+    .content h1 {
+        font-size: 76px !important;
+    }
+    .content p{
+        line-height: 30px;
+        font-size: 25px!important;
+    }
+    .btcReleaseContainer h2 {
+        font-size: 25px!important;
+    }
+    .timeContainer{
+        font-size: 28px!important;
+    }
+    .btn {
+        padding: 15px 20px!important;
+    }
+    .whitePaperBtn{
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .home nav ul{
+        display: block!important;
+    }
+    .home nav .burger{
+        display: none!important;
+    }
+    .content {
+        margin-top: 10%!important;
+    }
+
+    .content h1 {
+        font-size: 80px !important;
+    }
+    .content p{
+        line-height: 34px;
+        font-size: 28px!important;
+    }
+    .btcReleaseContainer h2 {
+        font-size: 28px!important;
+    }
+    .timeContainer{
+        font-size: 32px!important;
+    }
+    .btn {
+        padding: 15px 24px!important;
+    }
+    .whitePaperBtn{
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .content {
+        margin-top: 5%!important;
+    }
+}
