@@ -9,8 +9,8 @@
     }
 }
 
-.active{
-    color: #ff960b!important;
+.active {
+    color: #ff960b !important;
 }
 
 
@@ -99,7 +99,8 @@
     .btcReleaseContainer {
         margin-top: 22px;
         margin-bottom: 30px;
-        h2{
+
+        h2 {
             font-size: 20px;
             color: #ff960b;
         }
@@ -112,9 +113,22 @@
         align-items: center;
         margin-top: 10px;
 
-        #bar {
-            margin: 10px;
+        .part {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 1px solid #fff;
+            border-bottom: 0;
+            border-top: 0;
+            padding: 10px;
+            &:last-child{
+                border: 0;
+            }
         }
+
+        // #bar {
+        //     margin: 10px;
+        // }
     }
 
     .btn {

@@ -88,8 +88,17 @@
   align-items: center;
   margin-top: 10px;
 }
-.content .timeContainer #bar {
-  margin: 10px;
+.content .timeContainer .part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #fff;
+  border-bottom: 0;
+  border-top: 0;
+  padding: 10px;
+}
+.content .timeContainer .part:last-child {
+  border: 0;
 }
 .content .btn {
   display: inline-block;
