@@ -1,83 +1,143 @@
 @media (min-width: 576px) {
     .content {
-        margin-top: 20%!important;
+        margin-top: 20% !important;
     }
 
     .content h1 {
         font-size: 66px !important;
     }
-    .content p{
+
+    .content p {
         line-height: 25px;
-        font-size: 22px!important;
+        font-size: 18px !important;
     }
+
     .btcReleaseContainer h2 {
-        font-size: 22px!important;
+        font-size: 22px !important;
     }
-    .timeContainer{
-        font-size: 25px!important;
+
+    .timeContainer {
+        font-size: 25px !important;
+    }
+
+    .subjectsContainer {
+        justify-content: center!important;  
     }
 }
 
 @media (min-width: 768px) {
     .content {
-        margin-top: 15%!important;
+        margin-top: 15% !important;
     }
 
     .content h1 {
         font-size: 76px !important;
     }
-    .content p{
+
+    .content p {
         line-height: 30px;
-        font-size: 25px!important;
+        font-size: 22px !important;
     }
+
     .btcReleaseContainer h2 {
-        font-size: 25px!important;
+        font-size: 25px !important;
     }
-    .timeContainer{
-        font-size: 28px!important;
+
+    .timeContainer {
+        font-size: 28px !important;
     }
+
     .btn {
-        padding: 15px 20px!important;
+        padding: 15px 20px !important;
     }
-    .whitePaperBtn{
+
+    .whitePaperBtn {
         margin-left: 10px;
+    }
+
+    .marketNewsHeader .title {
+        font-size: 30px !important;
+    }
+
+    .marketNewsHeader button {
+        font-size: 15px !important;
+    }
+
+    .itemContainer h3 {
+        font-size: 25px !important;
+    }
+
+    .itemContainer p {
+        font-size: 18px !important;
+    }
+    .definitionContainer img{
+        display: inline-block!important;
     }
 }
 
 @media (min-width: 992px) {
-    .home nav ul{
-        display: block!important;
+    .home nav ul {
+        display: block !important;
     }
-    .home nav .burger{
-        display: none!important;
+
+    .home nav .burger {
+        display: none !important;
     }
+
     .content {
-        margin-top: 10%!important;
+        margin-top: 10% !important;
     }
 
     .content h1 {
         font-size: 80px !important;
     }
-    .content p{
+
+    .content p {
         line-height: 34px;
-        font-size: 28px!important;
+        font-size: 25px !important;
     }
+
     .btcReleaseContainer h2 {
-        font-size: 28px!important;
+        font-size: 28px !important;
     }
-    .timeContainer{
-        font-size: 32px!important;
+
+    .timeContainer {
+        font-size: 32px !important;
     }
+
     .btn {
-        padding: 15px 24px!important;
+        padding: 15px 24px !important;
     }
-    .whitePaperBtn{
+
+    .whitePaperBtn {
         margin-left: 15px;
     }
+
+    .newsContentContainer {
+        display: flex !important;
+    }
+
+    .newsContentContainer div:nth-child(2) {
+        margin: 0 25px !important;
+    }
+
+    .itemContainer h3 {
+        font-size: 18px !important;
+    }
+
+    .itemContainer p {
+        font-size: 15px !important;
+    }
+
+    .definitionContainer p{
+        margin-left: 60px!important;
+        line-height: 2vw!important;
+    }
+
 }
 
 @media (min-width: 1200px) {
     .content {
-        margin-top: 5%!important;
+        margin-top: 5% !important;
     }
 }
