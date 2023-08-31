@@ -21,7 +21,7 @@
     }
 
     .subjectsContainer {
-        justify-content: center!important;  
+        justify-content: center !important;
     }
 }
 
@@ -70,14 +70,23 @@
     .itemContainer p {
         font-size: 18px !important;
     }
-    .definitionContainer img{
-        display: inline-block!important;
+
+    .definitionContainer img {
+        display: inline-block !important;
     }
 }
 
 @media (min-width: 992px) {
     .home nav ul {
         display: block !important;
+        position: relative !important;
+        transform: none !important;
+        display: inline-block !important;
+        background-color: transparent !important;
+    }
+    .home nav ul li{
+        padding: 0!important;
+        border-bottom: none!important;
     }
 
     .home nav .burger {
@@ -129,9 +138,9 @@
         font-size: 15px !important;
     }
 
-    .definitionContainer p{
-        margin-left: 60px!important;
-        line-height: 2vw!important;
+    .definitionContainer p {
+        margin-left: 60px !important;
+        line-height: 2vw !important;
     }
 
 }

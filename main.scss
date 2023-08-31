@@ -51,6 +51,10 @@ span {
     }
 }
 
+.showMenu {
+    transform: translateY(0) !important;
+}
+
 
 * {
     margin: 0;
@@ -84,25 +88,50 @@ span {
     // }
 
     nav {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        padding: 20px 7%;
+
+        button {
+            background-color: transparent;
+            border: 0;
+            outline: 0;
+        }
 
         .burger {
+            z-index: 100;
             font-size: 25px;
             color: #ff960b;
             border: 2px solid #ff960b;
             border-radius: 5px;
             padding: 5px;
+
+            .close {
+                display: none;
+            }
         }
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        padding: 20px 7%;
-
         ul {
-            display: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            transform: translateY(-100%);
+            transition: transform 0.2s;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 99;
+            background-color: #000000;
+            // display: none;
 
             li {
+                padding: 20px 0;
+                border-bottom: 1px solid #ff960b;
                 display: inline-block;
                 margin: 10px 20px;
 
@@ -119,13 +148,12 @@ span {
         padding: 0 7%;
 
         h1 {
-            // font-size: 88px;
             font-size: 44px;
             margin-bottom: 15px;
         }
 
         p {
-            line-height: 22px;
+            line-height: 24px;
             font-size: 18px;
         }
 
@@ -159,10 +187,6 @@ span {
                     border: 0;
                 }
             }
-
-            // #bar {
-            //     margin: 10px;
-            // }
         }
 
         .whitePaperBtn {
@@ -196,9 +220,15 @@ span {
         justify-content: space-between;
         align-items: center;
         margin: 20px 0;
-        // button:hover i{
-        //     transform: rotate(-5px);
-        // }
+
+        button i {
+            transition: all .3s;
+        }
+
+        button:hover i {
+            transform: translateX(40%);
+        }
+
     }
 
     .itemContainer {
@@ -228,18 +258,22 @@ span {
             border: 1px solid #ff960b;
             border-radius: 0 !important;
             margin: 5px;
-            &:hover{
+
+            &:hover {
                 color: #ff960b;
             }
         }
     }
-    .definitionContainer{
+
+    .definitionContainer {
         display: flex;
         align-items: center;
-        p{
+
+        p {
             text-align: justify;
         }
-        img{
+
+        img {
             display: none;
             width: 40%;
             margin-left: 20px;

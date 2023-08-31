@@ -46,6 +46,10 @@ span {
   margin-right: 10px;
 }
 
+.showMenu {
+  transform: translateY(0) !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -67,23 +71,46 @@ span {
   cursor: pointer;
 }
 .home nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   padding: 20px 7%;
 }
+.home nav button {
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
 .home nav .burger {
+  z-index: 100;
   font-size: 25px;
   color: #ff960b;
   border: 2px solid #ff960b;
   border-radius: 5px;
   padding: 5px;
 }
-.home nav ul {
+.home nav .burger .close {
   display: none;
 }
+.home nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: #000000;
+}
 .home nav ul li {
+  padding: 20px 0;
+  border-bottom: 1px solid #ff960b;
   display: inline-block;
   margin: 10px 20px;
 }
@@ -100,7 +127,7 @@ span {
   margin-bottom: 15px;
 }
 .home .content p {
-  line-height: 22px;
+  line-height: 24px;
   font-size: 18px;
 }
 .home .content .btcReleaseContainer {
@@ -156,6 +183,12 @@ span {
   justify-content: space-between;
   align-items: center;
   margin: 20px 0;
+}
+.marketNews .marketNewsHeader button i {
+  transition: all 0.3s;
+}
+.marketNews .marketNewsHeader button:hover i {
+  transform: translateX(40%);
 }
 .marketNews .itemContainer {
   margin-bottom: 20px;
