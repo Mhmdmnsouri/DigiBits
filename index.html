@@ -53,7 +53,9 @@
             </div>
             <div>
                 <a href="#" class="btn buyBtcBtn">Buy BTC</a>
-                <a href="#" class="btn whitePaperBtn"><i class="fas fa-file-pdf"></i> Bitcoin White Paper</a>
+                <a href="https://bitcoin.org/bitcoin.pdf" class="btn whitePaperBtn" target="_blank"><i
+                        class="fas fa-file-pdf"></i>
+                    Bitcoin White Paper</a>
             </div>
         </div>
         <!-- <div class="coin-list">
@@ -108,12 +110,11 @@
 
     <section class="definition">
         <div class="subjectsContainer">
-            <button class="subjectItem btn active">Bitcoin</button>
-            <button class="subjectItem btn">Ethereum</button>
-            <button class="subjectItem btn">Altcoins</button>
-            <button class="subjectItem btn">Blockchian</button>
-            <button class="subjectItem btn">NFTs</button>
-            <button class="subjectItem btn">Defi</button>
+            <button class="subjectItem btn active" id="btc" onclick="defgenerator(btc)">Bitcoin</button>
+            <button class="subjectItem btn" id="eth" onclick="defgenerator(eth)">Ethereum</button>
+            <button class="subjectItem btn" id="blockchain" onclick="defgenerator(blockchain)">Blockchian</button>
+            <button class="subjectItem btn" id="nft" onclick="defgenerator(nft)">NFTs</button>
+            <button class="subjectItem btn" id="defi" onclick="defgenerator(defi)">Defi</button>
         </div>
         <div class="definitionContainer">
             <p class="textDefinition">Bitcoin (BTC) was invented by a pseudonymous individual or group named Satoshi
@@ -128,7 +129,7 @@
                 network and drive the issuance of the Bitcoin currency, the traders who speculate on this radically
                 market-driven asset, and the builders working to onboard people to the cryptocurrency paradigm.
             </p>
-            <img src="images/btc.png" class="image">
+            <img src="images/btc.png" class="image defImage">
         </div>
     </section>
 
