@@ -37,15 +37,15 @@
             <div class="btcReleaseContainer">
                 <h2>How old is the Bitcoin?</h2>
                 <div class="timeContainer">
-                    <div class="part">
+                    <div class="timePart">
                         <span id="years">10</span>
                         <h6>Years</h6>
                     </div>
-                    <div class="part">
+                    <div class="timePart">
                         <span id="months">07</span>
                         <h6>Months</h6>
                     </div>
-                    <div class="part">
+                    <div class="timePart">
                         <span id="days">03</span>
                         <h6>Days</h6>
                     </div>
@@ -83,7 +83,7 @@
         </div> -->
     </section>
 
-    <section class="marketNews">
+    <section class="marketNews section">
         <div class="marketNewsHeader">
             <h2 class="title">Market News</h2>
             <button class="btn">Explore More <i class="fas fa-arrow-right"></i></button>
@@ -108,7 +108,8 @@
 
     </section>
 
-    <section class="definition">
+    <section class="definition section">
+        <h2 class="title">Definition</h2>
         <div class="subjectsContainer">
             <button class="subjectItem btn active" id="btc" onclick="defgenerator(btc)">Bitcoin</button>
             <button class="subjectItem btn" id="eth" onclick="defgenerator(eth)">Ethereum</button>
@@ -133,7 +134,7 @@
         </div>
     </section>
 
-    <section class="roadmap">
+    <section class="roadmap section">
         <h2 class="title">Roadmap<i class="fa fa-roadmap"></i></h2>
         <div class="roadmapContainer">
             <div class="item">
@@ -205,7 +206,7 @@
         </div>
     </section>
 
-    <section class="topCoins">
+    <!-- <section class="topCoins section">
         <div class="topCoinsContainer">
             <div class="coinContainer"></div>
             <div class="coinContainer"></div>
@@ -213,15 +214,27 @@
             <div class="coinContainer"></div>
             <div class="coinContainer"></div>
         </div>
+    </section> -->
+
+    <section class="calculator section">
+        <h2 class="title">Bitcoin Calculator</h2>
+        <div class="calculatorContainer flex">
+            <div class="flex calPart">
+                <input type="text" id="userInput" placeholder="Please Enter">
+                <button class="btn">Calculate</button>
+                <h4 class="showCalculateResult"></h4>
+            </div>
+            <img src="images/money5.png">
+        </div>
     </section>
 
-    <section class="calculator">
+
+    <section class="feature section">
+        <h2 class="title">Blockchain Features</h2>
     </section>
 
-    <section class="feature">
-    </section>
-
-    <section class="subscribe">
+    <section class="subscribe section">
+        <h2 class="title">Subscribe</h2>
     </section>
 
     <footer></footer>
