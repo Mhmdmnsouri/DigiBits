@@ -46,7 +46,7 @@
     transition: all .3s;
 
     &:hover {
-        color: #f3ba40;
+        color: #ff960b;
     }
 }
 
@@ -363,6 +363,7 @@ body {
 
 
         input {
+            color: #fff;
             outline: none;
             border: 1px solid #fff;
             padding: 10px 20px;
@@ -379,7 +380,34 @@ body {
     }
 }
 
+.featureContainer {
+    flex-direction: column;
 
+    div:nth-child(even) {
+        background-color: #111;
+    }
+
+    .featureItem {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 5px;
+
+        img {
+            width: 200px;
+        }
+        h3{
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        p{
+            font-size: 18px;
+            text-align: center;
+            line-height: 24px;
+        }
+    }
+}
 
 
 .coin-list {
