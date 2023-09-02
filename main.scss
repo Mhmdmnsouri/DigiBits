@@ -1,8 +1,14 @@
-@mixin section {
+.section {
     display: flex;
     flex-direction: column;
     padding: 20px 7%;
     border-bottom: 1px solid #ff960b;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes updown {
@@ -215,7 +221,7 @@ body {
             align-items: center;
             margin-top: 10px;
 
-            .part {
+            .timePart {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -249,8 +255,6 @@ body {
 }
 
 .marketNews {
-    @include section;
-
     .marketNewsHeader {
         display: flex;
         justify-content: space-between;
@@ -274,8 +278,6 @@ body {
 }
 
 .definition {
-    @include section;
-
     .subjectsContainer {
         display: flex;
         justify-content: flex-start;
@@ -313,47 +315,70 @@ body {
 }
 
 
-.roadmap {
-    @include section;
+.roadmapContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 
-    .roadmapContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        height: 50vw;
+    .item {
+        margin-top: 5vw;
+        margin-bottom: 2vw;
 
-        .item {
-            margin-top: 5vw;
-            margin-bottom: 2vw;
+        &:hover i {
+            color: rgb(45, 198, 45) !important;
 
-            &:hover i {
-                color: rgb(45, 198, 45) !important;
-
-            }
-
-            &:hover h3 {
-                transform: translateX(15px);
-            }
         }
 
-
-        i,
-        h3 {
-            color: #ff960b;
-            transition: all .3s;
-        }
-
-        h3 {
-            margin-bottom: 5px;
-        }
-
-        p {
-            font-size: 15px;
-            text-align: justify;
+        &:hover h3 {
+            transform: translateX(15px);
         }
     }
+
+
+    i,
+    h3 {
+        color: #ff960b;
+        transition: all .3s;
+    }
+
+    h3 {
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 15px;
+        text-align: justify;
+    }
 }
+
+.calculatorContainer {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .calPart {
+        border: 1px solid #ff960b;
+        padding: 10px;
+        border-radius: 5px;
+
+
+        input {
+            outline: none;
+            border: 1px solid #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: transparent;
+            margin: 10px;
+            width: 70%;
+
+        }
+    }
+
+    img {
+        display: none;
+    }
+}
+
 
 
 
