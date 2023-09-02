@@ -1,12 +1,12 @@
 @keyframes updown {
   0% {
-    transform: translateY(-1%);
+    transform: translateY(-1.5%);
   }
   50% {
-    transform: translateY(1%);
+    transform: translateY(1.5%);
   }
   100% {
-    transform: translateY(-1%);
+    transform: translateY(-1.5%);
   }
 }
 @keyframes rightleft {
@@ -59,6 +59,9 @@ span {
   color: #ff960b;
 }
 
+.title {
+  margin: 20px 0;
+}
 .title:before {
   content: "";
   top: 0;
@@ -77,6 +80,11 @@ span {
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppinds", sans-serif;
+}
+
+body {
+  background-color: #000000;
+  color: #fff;
 }
 
 .home {
@@ -194,9 +202,7 @@ span {
 .marketNews {
   display: flex;
   flex-direction: column;
-  padding: 0 7%;
-  color: #fff;
-  background-color: #000000;
+  padding: 20px 7%;
   border-bottom: 1px solid #ff960b;
 }
 .marketNews .marketNewsHeader {
@@ -219,9 +225,8 @@ span {
 .definition {
   display: flex;
   flex-direction: column;
-  padding: 20px 7% 0 7%;
-  color: #fff;
-  background-color: #000000;
+  padding: 20px 7%;
+  border-bottom: 1px solid #ff960b;
 }
 .definition .subjectsContainer {
   display: flex;
@@ -250,6 +255,42 @@ span {
   width: 40%;
   margin-left: 20px;
   animation: updown 2s ease infinite;
+}
+
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 7%;
+  border-bottom: 1px solid #ff960b;
+}
+.roadmap .roadmapContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 50vw;
+}
+.roadmap .roadmapContainer .item {
+  margin-top: 5vw;
+  margin-bottom: 2vw;
+}
+.roadmap .roadmapContainer .item:hover i {
+  color: rgb(45, 198, 45) !important;
+}
+.roadmap .roadmapContainer .item:hover h3 {
+  transform: translateX(15px);
+}
+.roadmap .roadmapContainer i,
+.roadmap .roadmapContainer h3 {
+  color: #ff960b;
+  transition: all 0.3s;
+}
+.roadmap .roadmapContainer h3 {
+  margin-bottom: 5px;
+}
+.roadmap .roadmapContainer p {
+  font-size: 15px;
+  text-align: justify;
 }
 
 .coin-list {
