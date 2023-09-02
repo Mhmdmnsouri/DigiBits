@@ -23,6 +23,25 @@
     .subjectsContainer {
         justify-content: center !important;
     }
+
+    .calculatorContainer {
+        width: 90%;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-start;
+    }
+
+    .calPart input {
+        font-size: 15px !important;
+    }
+
+    .calculatorContainer img {
+        display: inline-block !important;
+        width: 6em !important;
+    }
+
+
+
 }
 
 @media (min-width: 768px) {
@@ -73,6 +92,22 @@
 
     .definitionContainer img {
         display: inline-block !important;
+    }
+
+    .calculatorContainer{
+        width: 100%!important;
+    }
+
+    .calPart {
+        justify-content: center !important;
+        border: none !important;
+        padding: 0!important;
+    }
+
+    .calPart input {
+        padding: 16px 24px !important;
+        margin-right: 15px !important;
+        width: 65%!important;
     }
 }
 
@@ -146,7 +181,7 @@
 
     .roadmapContainer {
         flex-wrap: wrap;
-        height: 54em!important;
+        height: 54em !important;
     }
 
     .item {
@@ -174,7 +209,8 @@
     .content {
         margin-top: 5% !important;
     }
+
     .roadmapContainer {
-        height: 48em!important;
+        height: 48em !important;
     }
 }
