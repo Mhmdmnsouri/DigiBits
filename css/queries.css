@@ -84,9 +84,10 @@
         display: inline-block !important;
         background-color: transparent !important;
     }
-    .home nav ul li{
-        padding: 0!important;
-        border-bottom: none!important;
+
+    .home nav ul li {
+        padding: 0 !important;
+        border-bottom: none !important;
     }
 
     .home nav .burger {
@@ -143,10 +144,37 @@
         line-height: 2vw !important;
     }
 
+    .roadmapContainer {
+        flex-wrap: wrap;
+        height: 54em!important;
+    }
+
+    .item {
+        width: 40% !important;
+        margin-top: 2vw !important;
+        margin-bottom: .5vw !important;
+
+        i {
+            color: #ff960b;
+        }
+
+        h3 {
+            color: #ff960b;
+        }
+
+        p {
+            font-size: 15px;
+
+        }
+    }
+
 }
 
 @media (min-width: 1200px) {
     .content {
         margin-top: 5% !important;
+    }
+    .roadmapContainer {
+        height: 48em!important;
     }
 }
