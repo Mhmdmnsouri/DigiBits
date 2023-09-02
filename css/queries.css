@@ -33,6 +33,7 @@
 
     .calPart input {
         font-size: 15px !important;
+        color: #fff;
     }
 
     .calculatorContainer img {
@@ -40,9 +41,21 @@
         width: 6em !important;
     }
 
+    .featureItem img {
+        width: 220px !important;
+    }
 
+    .featureItem h3 {
+        font-size: 30px !important;
+    }
+
+    .featureItem p {
+        font-size: 20px !important;
+    }
 
 }
+
+
 
 @media (min-width: 768px) {
     .content {
@@ -94,21 +107,51 @@
         display: inline-block !important;
     }
 
-    .calculatorContainer{
-        width: 100%!important;
+    .calculatorContainer {
+        width: 100% !important;
     }
 
     .calPart {
         justify-content: center !important;
         border: none !important;
-        padding: 0!important;
+        padding: 0 !important;
     }
 
     .calPart input {
         padding: 16px 24px !important;
         margin-right: 15px !important;
-        width: 65%!important;
+        width: 65% !important;
     }
+
+    .feature {
+        height: 85em !important;
+    }
+
+    .featureContainer {
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+
+    .featureItem {
+        width: 50%;
+    }
+
+    .featureItem img {
+        width: 200px !important;
+    }
+
+    .featureItem h3 {
+        font-size: 25px !important;
+    }
+
+    .featureItem p {
+        font-size: 20px !important;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
 }
 
 @media (min-width: 992px) {
@@ -201,6 +244,26 @@
             font-size: 15px;
 
         }
+    }
+
+    .feature {
+        height: 65em !important;
+    }
+
+    .featureItem {
+        width: 33.33% !important;
+    }
+
+    .featureItem img {
+        width: 200px !important;
+    }
+
+    .featureItem h3 {
+        font-size: 22px !important;
+    }
+
+    .featureItem p {
+        font-size: 18px !important;
     }
 
 }
