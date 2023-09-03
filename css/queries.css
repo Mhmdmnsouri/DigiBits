@@ -59,7 +59,7 @@
 
 @media (min-width: 768px) {
     .content {
-        margin-top: 15% !important;
+        margin-top: 10% !important;
     }
 
     .content h1 {
@@ -101,6 +101,11 @@
 
     .itemContainer p {
         font-size: 18px !important;
+    }
+
+    .subjectsContainer button {
+        font-size: 15px;
+        padding: 2px 5px !important;
     }
 
     .definitionContainer img {
