@@ -1,13 +1,13 @@
 @media (min-width: 576px) {
-    .content {
+    .homeContent {
         margin-top: 20% !important;
     }
 
-    .content h1 {
+    .homeContent h1 {
         font-size: 66px !important;
     }
 
-    .content p {
+    .homeContent p {
         line-height: 25px;
         font-size: 18px !important;
     }
@@ -22,6 +22,19 @@
 
     .subjectsContainer {
         justify-content: center !important;
+    }
+
+    .stepsContainer {
+        width: 80% !important;
+    }
+
+    .stepContent h3 {
+        font-size: 25px !important;
+    }
+
+    .stepContent p {
+        font-size: 16px !important;
+        line-height: 20px;
     }
 
     .calculatorContainer {
@@ -52,21 +65,20 @@
     .featureItem p {
         font-size: 20px !important;
     }
-
 }
 
 
 
 @media (min-width: 768px) {
-    .content {
+    .homeContent {
         margin-top: 10% !important;
     }
 
-    .content h1 {
+    .homeContent h1 {
         font-size: 76px !important;
     }
 
-    .content p {
+    .homeContent p {
         line-height: 30px;
         font-size: 22px !important;
     }
@@ -108,8 +120,19 @@
         padding: 2px 5px !important;
     }
 
+    .definitionContainer {
+        flex-direction: row !important;
+        margin-top: 10px !important;
+    }
+
+    .definitionContainer p {
+        text-align: justify;
+    }
+
     .definitionContainer img {
         display: inline-block !important;
+        width: 40% !important;
+        margin: 0 0 20px 0 !important;
     }
 
     .calculatorContainer {
@@ -160,6 +183,10 @@
 }
 
 @media (min-width: 992px) {
+    .homeContent {
+        margin-top: 5% !important;
+    }
+
     .home nav ul {
         display: block !important;
         position: relative !important;
@@ -177,15 +204,11 @@
         display: none !important;
     }
 
-    .content {
-        margin-top: 10% !important;
-    }
-
-    .content h1 {
+    .homeContent h1 {
         font-size: 80px !important;
     }
 
-    .content p {
+    .homeContent p {
         line-height: 34px;
         font-size: 25px !important;
     }
@@ -214,6 +237,29 @@
         margin: 0 25px !important;
     }
 
+    .stepsContainer:nth-child(odd) {
+        flex-direction: row-reverse !important;
+    }
+
+    .stepsContainer {
+        width: 100% !important;
+        flex-direction: row !important;
+    }
+
+    .stepContent {
+        width: 40% !important;
+        transition: all .2s;
+        cursor: pointer;
+    }
+
+    .stepContent:hover {
+        box-shadow: 0 0 20px rgb(255, 255, 225, 1)!important;
+    }
+
+    .step-line {
+        display: block !important;
+    }
+
     .itemContainer h3 {
         font-size: 18px !important;
     }
@@ -227,9 +273,8 @@
         line-height: 2vw !important;
     }
 
-    .roadmapContainer {
+    .steps {
         flex-wrap: wrap;
-        height: 54em !important;
     }
 
     .item {
@@ -273,12 +318,4 @@
 
 }
 
-@media (min-width: 1200px) {
-    .content {
-        margin-top: 5% !important;
-    }
-
-    .roadmapContainer {
-        height: 48em !important;
-    }
-}
+@media (min-width: 1200px) {}
