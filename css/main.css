@@ -161,34 +161,34 @@ body {
   color: #fff;
   text-decoration: none;
 }
-.home .content {
+.home .homeContent {
   margin-top: 30%;
   padding: 0 7%;
 }
-.home .content h1 {
+.home .homeContent h1 {
   font-size: 44px;
   margin-bottom: 15px;
 }
-.home .content p {
+.home .homeContent p {
   line-height: 24px;
   font-size: 18px;
 }
-.home .content .btcReleaseContainer {
+.home .homeContent .btcReleaseContainer {
   margin-top: 22px;
   margin-bottom: 30px;
 }
-.home .content .btcReleaseContainer h2 {
+.home .homeContent .btcReleaseContainer h2 {
   font-size: 20px;
   color: #ff960b;
 }
-.home .content .timeContainer {
+.home .homeContent .timeContainer {
   font-size: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-top: 10px;
 }
-.home .content .timeContainer .timePart {
+.home .homeContent .timeContainer .timePart {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -197,19 +197,19 @@ body {
   border-top: 0;
   padding: 10px;
 }
-.home .content .timeContainer .timePart:last-child {
+.home .homeContent .timeContainer .timePart:last-child {
   border: 0;
 }
-.home .content .whitePaperBtn {
+.home .homeContent .whitePaperBtn {
   background-color: transparent !important;
   border: 1px solid #fff;
   margin-left: 5px;
 }
-.home .content .whitePaperBtn:hover {
+.home .homeContent .whitePaperBtn:hover {
   color: #ff960b !important;
   border: 1px solid #ff960b !important;
 }
-.home .content .buyBtcBtn:hover {
+.home .homeContent .buyBtcBtn:hover {
   background-color: #f0a910 !important;
 }
 
@@ -259,45 +259,88 @@ body {
 }
 .definition .definitionContainer {
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
 }
-.definition .definitionContainer p {
-  text-align: justify;
-}
 .definition .definitionContainer img {
-  display: none;
-  width: 40%;
-  margin-left: 20px;
+  width: 80%;
+  margin: 20px 0;
   animation: updown 2s ease infinite;
 }
 
-.roadmapContainer {
+.steps {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
 }
-.roadmapContainer .item {
-  margin-top: 5vw;
-  margin-bottom: 2vw;
+.steps:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: #ff960b;
+  opacity: 0.3;
+  top: 0;
+  bottom: 45px;
 }
-.roadmapContainer .item:hover i {
-  color: rgb(45, 198, 45) !important;
+.steps .stepsContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  margin-bottom: 25px;
 }
-.roadmapContainer .item:hover h3 {
-  transform: translateX(15px);
+.steps .stepsContainer .stepContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 32px;
+  background-color: #111;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 1px 20px rgba(255, 150, 11, 0.5);
+  z-index: 999;
 }
-.roadmapContainer i,
-.roadmapContainer h3 {
+.steps .stepsContainer .step-line {
+  display: none;
+  width: 40px;
+  background-color: #ff960b;
+  height: 1px;
+  opacity: 0.4;
+  margin-bottom: 10px;
+}
+.steps .stepsContainer .date {
+  display: flex;
+  font-weight: 900;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 15px;
+  width: 62px;
+  height: 62px;
+  background-color: #ff960b;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.steps .stepsContainer i {
+  color: #ff960b;
+}
+.steps .stepsContainer h3 {
   color: #ff960b;
   transition: all 0.3s;
+  text-align: center;
 }
-.roadmapContainer h3 {
+.steps .stepsContainer h3 {
   margin-bottom: 5px;
+  font-size: 20px;
 }
-.roadmapContainer p {
+.steps .stepsContainer p {
   font-size: 15px;
-  text-align: justify;
+  text-align: center;
 }
 
 .calculatorContainer {
