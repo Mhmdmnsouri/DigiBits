@@ -37,6 +37,18 @@
         line-height: 20px;
     }
 
+    .nftsItem h3 {
+        font-size: 25px !important;
+    }
+
+    .nftsInfo h5 {
+        font-size: 18px !important;
+    }
+
+    .nftsInfo button {
+        font-size: 18px !important;
+    }
+
     .calculatorContainer {
         width: 90%;
         flex-direction: row !important;
@@ -133,6 +145,24 @@
         display: inline-block !important;
         width: 40% !important;
         margin: 0 0 20px 0 !important;
+    }
+
+    .nftsContainer {
+        flex-direction: row !important;
+        justify-content: space-between;
+    }
+
+    .nftsItem {
+        width: 23% !important;
+    }
+
+    .nftsInfo {
+        flex-direction: column !important;
+        align-items: self-start !important;
+    }
+
+    .nftsInfo h5 {
+        margin-bottom: 5px !important;
     }
 
     .calculatorContainer {
@@ -253,7 +283,7 @@
     }
 
     .stepContent:hover {
-        box-shadow: 0 0 20px rgb(255, 255, 225, 1)!important;
+        box-shadow: 0 0 20px rgb(255, 255, 225, 1) !important;
     }
 
     .step-line {
