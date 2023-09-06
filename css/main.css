@@ -240,6 +240,45 @@ body {
   background-color: #ff960b !important;
 }
 
+.nftsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nftsHeader button i {
+  margin-left: 4px;
+  animation: rightleft 2s ease infinite;
+}
+
+.nftsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nftsContainer .nftsItem {
+  margin: 20px 0;
+  width: 100%;
+}
+.nftsContainer .nftsItem h3 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+.nftsContainer .nftsItem .nftsInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nftsContainer .nftsItem .nftsInfo h5 {
+  font-size: 15px;
+}
+.nftsContainer .nftsItem .nftsInfo button {
+  padding: 5px 15px !important;
+}
+.nftsContainer .nftsItem img {
+  width: 100%;
+  border-radius: 20px;
+}
+
 .definition .subjectsContainer {
   display: flex;
   justify-content: flex-start;
