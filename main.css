@@ -94,6 +94,14 @@ span {
   transform: translateY(0) !important;
 }
 
+.topCoinIcon {
+  width: 15px;
+}
+
+.mobileHide {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -455,6 +463,36 @@ body {
 
 .calculatorContainer img {
   display: none;
+}
+
+.topCoinsTable {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.topCoinsTable th {
+  padding: 1em 0;
+  color: #ff960b;
+}
+
+.topCoinsTable td {
+  border-bottom: 1px solid #ff950b73;
+  padding: 1em 0;
+}
+
+.topCoinsTable td span {
+  opacity: .8;
+  font-size: 10px;
+}
+
+.topCoinsTable tbody tr:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+
+.topCoinsTable .coinSharp {
+  padding-right: 1em;
 }
 
 .featureContainer {

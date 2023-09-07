@@ -99,6 +99,14 @@ span {
     transform: translateY(0) !important;
 }
 
+.topCoinIcon {
+    width: 15px;
+}
+
+.mobileHide {
+    display: none;
+}
+
 
 * {
     margin: 0;
@@ -488,6 +496,37 @@ body {
     }
 }
 
+.topCoinsTable {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+
+    th {
+        padding: 1em 0;
+        color: #ff960b;
+    }
+
+    td {
+        border-bottom: 1px solid #ff950b73;
+        padding: 1em 0;
+
+        span {
+            opacity: .8;
+            font-size: 10px;
+        }
+    }
+
+    tbody tr:hover {
+        background-color: #222;
+        cursor: pointer;
+
+    }
+
+    .coinSharp {
+        padding-right: 1em;
+    }
+}
+
 .featureContainer {
     flex-direction: column;
 
@@ -531,7 +570,6 @@ body {
         }
     }
 }
-
 
 .coin-list {
     position: absolute;
