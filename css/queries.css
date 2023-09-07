@@ -66,6 +66,10 @@
         width: 6em !important;
     }
 
+    .mobileHide {
+        display: table-cell !important;
+    }
+
     .featureItem img {
         width: 220px !important;
     }
@@ -325,6 +329,14 @@
 
         }
     }
+
+    .topCoinsTable {
+        font-size: 20px!important;
+    }
+    .topCoinIcon {
+        width: 18px!important;
+    }
+    
 
     .feature {
         height: 65em !important;
