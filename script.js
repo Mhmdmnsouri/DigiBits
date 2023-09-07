@@ -1,20 +1,34 @@
-let btcprice = document.getElementById('bitcoin');
-let ethprice = document.getElementById('ethereum');
-let dogeprice = document.getElementById('dogecoin');
+let btcPriceElem = document.getElementById('btcPrice');
+let ethPriceElem = document.getElementById('ethPrice');
+let usdtPriceElem = document.getElementById('usdtPrice');
+let bnbPriceElem = document.getElementById('bnbPrice');
+let xrpPriceElem = document.getElementById('xrpPrice');
+let usdcPriceElem = document.getElementById('usdcPrice');
+let adaPriceElem = document.getElementById('adaPrice');
+let dogePriceElem = document.getElementById('dogePrice');
+let solPriceElem = document.getElementById('solPrice');
+let trxPriceElem = document.getElementById('trxPrice');
 
 let settings = {
     'asunc': true,
     'scrossDomain': true,
-    'url': 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cdogecoin&vs_currencies=usd',
+    'url': 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Ctether%2Cbnb%2Cripple%2Cusd%2Ccardano%2Cbinancecoin%2CdogeCoin%2Csolana%2Ctron&vs_currencies=usd',
     'method': 'GET',
     'headers': {}
 }
-
+console.log(settings);
 $.ajax(settings).done(function (response) {
+    btcPriceElem.innerHTML = `$${response.bitcoin.usd}`;
+    ethPriceElem.innerHTML = `$${response.ethereum.usd}`;
+    usdtPriceElem.innerHTML = `$${response.tether.usd}`
+    bnbPriceElem.innerHTML = `$${response.binancecoin.usd}`
+    xrpPriceElem.innerHTML = `$${response.ripple.usd}`
+    usdcPriceElem.innerHTML = `$${response.usd.usd}`
+    adaPriceElem.innerHTML = `$${response.cardano.usd}`
+    dogePriceElem.innerHTML = `$${response.dogecoin.usd}`
+    solPriceElem.innerHTML = `$${response.solana.usd}`
+    trxPriceElem.innerHTML = `$${response.tron.usd}`
     console.log(response)
-    btcprice.innerHTML = response.bitcoin.usd;
-    ethprice.innerHTML = response.ethereum.usd;
-    dogeprice.innerHTML = response.dogecoin.usd;
 })
 
 const navHeaderElem = document.querySelector('.navHeader');
