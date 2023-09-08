@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   padding: 20px 7%;
-  border-bottom: 1px solid #ff960b;
 }
 
 .flex {
@@ -95,6 +94,11 @@ span {
 
 .mobileHide {
   display: none;
+}
+
+.topCoinsTable tr td h4 {
+  display: inline-block;
+  margin: 0 5px;
 }
 
 * {
@@ -372,6 +376,12 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 999;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.steps .stepsContainer .date:hover {
+  background-color: #e3e3e3;
+  color: #ff960b;
 }
 .steps .stepsContainer i {
   color: #ff960b;
@@ -428,7 +438,7 @@ body {
 }
 .topCoinsTable td span {
   opacity: 0.8;
-  font-size: 10px;
+  font-size: 18px;
 }
 .topCoinsTable tbody tr:hover {
   background-color: #222;
@@ -471,30 +481,4 @@ body {
   font-size: 18px;
   text-align: center;
   line-height: 24px;
-}
-
-.coin-list {
-  position: absolute;
-  right: 10%;
-  bottom: 50px;
-  display: flex;
-  align-items: center;
-}
-.coin-list .coin {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  margin: 0 15px;
-  color: #ff960b;
-  border: 1px solid #fff;
-  padding: 20px 30px;
-  border-radius: 8px;
-}
-.coin-list .coin img {
-  width: 40px;
-  margin-right: 10px;
-}
-.coin-list .coin h3 {
-  color: #fff;
-  margin-bottom: 5px;
 }/*# sourceMappingURL=main.css.map */
