@@ -9,20 +9,21 @@
     <link rel="stylesheet" href="css/queries.css">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
-    <section class="home" style="background-image: url(images/bg1.webp);">
+    <section id="home" class="home" style="background-image: url(images/bg1.webp);">
         <nav class="menu">
             <img src="images/logo.png" class="logo">
             <ul class="navHeader">
-                <li><a href="#" class="link">Home</a></li>
-                <li><a href="#" class="link">Market News</a></li>
-                <li><a href="#" class="link">White Paper</a></li>
-                <li><a href="#" class="link">Road Map</a></li>
-                <li><a href="#" class="link">Blockchain</a></li>
-                <li><a href="#" class="link">NFT Shop</a></li>
+                <li><a href="#" class="link homeLink">Home</a></li>
+                <li><a href="#" class="link topCoins">Top Coins</a></li>
+                <li><a href="#" class="link whitePaper">White Paper</a></li>
+                <li><a href="#" class="link roadMap">Road Map</a></li>
+                <li><a href="#" class="link Blockchain">Blockchain</a></li>
+                <li><a href="#" class="link nftShop">NFT Shop</a></li>
             </ul>
             <button class="burger">
                 <i class="fas fa-bars bars"></i>
@@ -58,29 +59,6 @@
                     Bitcoin White Paper</a>
             </div>
         </div>
-        <!-- <div class="coin-list">
-            <div class="coin">
-                <img src="images/bitcoin.png" alt="">
-                <div>
-                    <h3>$<span id="bitcoin"></span></h3>
-                    <p>Bitcoin</p>
-                </div>
-            </div>
-            <div class="coin">
-                <img src="images/ethereum.png" alt="">
-                <div>
-                    <h3>$<span id="ethereum"></span></h3>
-                    <p>Ethereum</p>
-                </div>
-            </div>
-            <div class="coin">
-                <img src="images/dogecoin.png" alt="">
-                <div>
-                    <h3>$<span id="dogecoin"></span></h3>
-                    <p>Dogecoin</p>
-                </div>
-            </div>
-        </div> -->
     </section>
 
     <section class="definition section">
@@ -108,7 +86,7 @@
         </div>
     </section>
 
-    <section class="marketNews section">
+    <!-- <section class="marketNews section">
         <div class="marketNewsHeader">
             <h2 class="title">Market News</h2>
             <button class="btn">Explore More <i class="fas fa-arrow-right"></i></button>
@@ -134,9 +112,9 @@
             </div>
         </div>
 
-    </section>
+    </section> -->
 
-    <section class="Nfts section">
+    <section id="NftSection" class="Nfts section">
         <div class="nftsHeader">
             <h2 class="title">Explore NFTs</h2>
             <button class="btn">Explore More <i class="fas fa-arrow-right"></i></button>
@@ -178,7 +156,7 @@
         </div>
     </section>
 
-    <section class="roadmap section">
+    <section id="RoadmapSection" class="roadmap section">
         <h2 class="title">Roadmap<i class="fa fa-roadmap"></i></h2>
         <div class="roadmapContainer">
             <div class="steps">
@@ -293,7 +271,7 @@
         </div>
     </section>
 
-    <section class="topCoins section">
+    <section id="TopCoinsSection" class="topCoins section">
         <h2 class="title">Top Coins</h2>
         <div class="topCoinsContainer">
             <table class="topCoinsTable">
@@ -310,83 +288,103 @@
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td><img src="images/1.png" class="topCoinIcon"> Bitcoin <span>BTC</span></td>
-                        <td id="btcPrice">$25764</td>
-                        <td class="mobileHide">$501.75 B</td>
-                        <td class="mobileHide">$68780.77</td>
-                        <td class="mobileHide">19,478,700 BTC</td>
+                        <td><img src="images/1.png" class="topCoinIcon">
+                            <h4 id="coinName1"></h4><span id="coinSymbol1"></span>
+                        </td>
+                        <td id="coinPrice1"></td>
+                        <td id="coinMC1" class="mobileHide"></td>
+                        <td id="coinATH1" class="mobileHide"></td>
+                        <td id="coinCS1" class="mobileHide"></td>
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td><img src="images/2.png" class="topCoinIcon"> Ethereum <span>ETH</span></td>
-                        <td id="ethPrice">$1,626.98</th>
-                        <td class="mobileHide">$501.75 B</td>
-                        <td class="mobileHide">$4861.29</td>
-                        <td class="mobileHide">120,218,704 ETH </td>
+                        <td><img src="images/2.png" class="topCoinIcon">
+                            <h4 id="coinName2"></h4> <span id="coinSymbol2"></span>
+                        </td>
+                        <td id="coinPrice2"></td>
+                        <td id="coinMC2" class="mobileHide"></td>
+                        <td id="coinATH2" class="mobileHide"></td>
+                        <td id="coinCS2" class="mobileHide"> </td>
                     </tr>
                     <tr>
                         <td>3</td>
-                        <td><img src="images/3.png" class="topCoinIcon"> Tether <span>USDT</span></td>
-                        <td id="usdtPrice">25764</th>
-                        <td class="mobileHide">501.75 B</td>
-                        <td class="mobileHide">$1.08</td>
-                        <td class="mobileHide">82,911,183,292 USDT</td>
+                        <td><img src="images/3.png" class="topCoinIcon">
+                            <h4 id="coinName3"></h4> <span id="coinSymbol3"></span>
+                        </td>
+                        <td id="coinPrice3"></td>
+                        <td id="coinMC3" class="mobileHide"></td>
+                        <td id="coinATH3" class="mobileHide"></td>
+                        <td id="coinCS3" class="mobileHide"></td>
                     </tr>
                     <tr>
                         <td>4</td>
-                        <td><img src="images/4.png" class="topCoinIcon"> BNB <span>BNB</span></td>
-                        <td id="bnbPrice">25764</td>
-                        <td class="mobileHide">501.75 B</td>
-                        <td class="mobileHide">$691.56</td>
-                        <td class="mobileHide">153,849,613 BNB</td>
+                        <td><img src="images/4.png" class="topCoinIcon">
+                            <h4 id="coinName4"></h4> <span id="coinSymbol4"></span>
+                        </td>
+                        <td id="coinPrice4"></td>
+                        <td id="coinMC4" class="mobileHide"></td>
+                        <td id="coinATH4" class="mobileHide"></td>
+                        <td id="coinCS4" class="mobileHide"></td>
                     </tr>
                     <tr>
                         <td>5</td>
-                        <td><img src="images/5.png" class="topCoinIcon"> Ripple <span>XRP</span></td>
-                        <td id="xrpPrice">25764</td>
-                        <td class="mobileHide">501.75 B</td>
-                        <td class="mobileHide">$3.92</td>
-                        <td class="mobileHide">52,977,697,600 XRP </td>
+                        <td><img src="images/5.png" class="topCoinIcon">
+                            <h4 id="coinName5"></h4> <span id="coinSymbol5"></span>
+                        </td>
+                        <td id="coinPrice5"></td>
+                        <td id="coinMC5" class="mobileHide"></td>
+                        <td id="coinATH5" class="mobileHide"></td>
+                        <td id="coinCS5" class="mobileHide"></td>
                     </tr>
                     <tr>
                         <td>6</td>
-                        <td><img src="images/6.png" class="topCoinIcon"> USD Coin <span>USDC</span></td>
-                        <td id="usdcPrice">25764</td>
-                        <td class="mobileHide">501.75 B</td>
-                        <td class="mobileHide">$1.09</td>
-                        <td class="mobileHide">26,016,580,910 USDC</td>
+                        <td><img src="images/7.png" class="topCoinIcon">
+                            <h4 id="coinName6"></h4> <span id="coinSymbol6"></span>
+                        </td>
+                        <td id="coinPrice6"></td>
+                        <td id="coinMC6" class="mobileHide"></td>
+                        <td id="coinATH6" class="mobileHide"></td>
+                        <td id="coinCS6" class="mobileHide"></td>
                     </tr>
                     <tr>
                         <td>7</td>
-                        <td><img src="images/7.png" class="topCoinIcon"> Cardano <span>ADA</span></td>
-                        <td id="adaPrice">25764</th>
-                        <td class="mobileHide">501.75 B</td>
-                        <td class="mobileHide">$3.09</td>
-                        <td class="mobileHide">35,088,065,965 ADA </td>
+                        <td><img src="images/8.png" class="topCoinIcon">
+                            <h4 id="coinName7"></h4> <span id="coinSymbol7"></span>
+                        </td>
+                        <td id="coinPrice7"></td>
+                        <td id="coinMC7" class="mobileHide"></td>
+                        <td id="coinATH7" class="mobileHide"></td>
+                        <td id="coinCS7" class="mobileHide"></td>
                     </tr>
                     <tr>
                         <td>8</td>
-                        <td><img src="images/8.png" class="topCoinIcon"> DogeCoin <span>DOGE</span></td>
-                        <td id="dogePrice">25764</td>
-                        <td class="mobileHide">501.75 B</td>
-                        <td class="mobileHide">$0.737171</td>
-                        <td class="mobileHide">140,909,176,384 DOGE </td>
+                        <td><img src="images/9.png" class="topCoinIcon">
+                            <h4 id="coinName8"></h4> <span id="coinSymbol8"></span>
+                        </td>
+                        <td id="coinPrice8"></td>
+                        <td id="coinMC8" class="mobileHide"></td>
+                        <td id="coinATH8" class="mobileHide"></td>
+                        <td id="coinCS8" class="mobileHide"></td>
                     </tr>
                     <tr>
                         <td>9</td>
-                        <td><img src="images/9.png" class="topCoinIcon"> Solana <span>SOL</span></td>
-                        <td id="solPrice">25764</td>
-                        <td class="mobileHide">501.75 B</td>
-                        <td class="mobileHide">$259.84</td>
-                        <td class="mobileHide">409,604,265 SOL </td>
+                        <td><img src="images/10.png" class="topCoinIcon">
+                            <h4 id="coinName9"></h4> <span id="coinSymbol9"></span>
+                        </td>
+                        <td id="coinPrice9"></td>
+                        <td id="coinMC9" class="mobileHide"></td>
+                        <td id="coinATH9" class="mobileHide"></td>
+                        <td id="coinCS9" class="mobileHide"></td>
                     </tr>
                     <tr>
                         <td>10</td>
-                        <td><img src="images/10.png" class="topCoinIcon"> TRON <span>TRX</span></td>
-                        <td id="trxPrice">25764</th>
-                        <td class="mobileHide">501.75 B</td>
-                        <td class="mobileHide">$0.294743</td>
-                        <td class="mobileHide">89,268,977,139 TRX </td>
+                        <td><img src="images/6.png" class="topCoinIcon">
+                            <h4 id="coinName10"></h4> <span id="coinSymbol10"></span>
+                        </td>
+                        <td id="coinPrice10"></td>
+                        <td id="coinMC10" class="mobileHide"></td>
+                        <td id="coinATH10" class="mobileHide"></td>
+                        <td id="coinCS10" class="mobileHide"></td>
                     </tr>
                 </tbody>
             </table>
@@ -410,7 +408,7 @@
     </section> -->
 
 
-    <section class="feature section">
+    <section id="BlockchainSection" class="feature section">
         <h2 class="title">Blockchain Features</h2>
         <div class="featureContainer flex">
             <div class="featureItem flex">
