@@ -331,12 +331,13 @@
     }
 
     .topCoinsTable {
-        font-size: 20px!important;
+        font-size: 20px !important;
     }
+
     .topCoinIcon {
-        width: 18px!important;
+        width: 18px !important;
     }
-    
+
 
     .feature {
         height: 65em !important;
@@ -356,6 +357,29 @@
 
     .featureItem p {
         font-size: 18px !important;
+    }
+
+    .footerContainer {
+        flex-direction: row !important;
+        text-align: start !important;
+        width: 80%!important;
+    }
+
+    .footerInfo {
+        width: 40% !important;
+        margin-bottom: 0 !important;
+    }
+
+    .footerInfoTitle {
+        justify-content: flex-start !important;
+    }
+
+    .footerSubscribe {
+        margin-bottom: 0 !important;
+    }
+
+    .subscribeBox {
+        margin-bottom: 20px !important;
     }
 
 }
