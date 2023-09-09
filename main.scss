@@ -350,16 +350,6 @@ body {
     justify-content: flex-start;
     position: relative;
 
-    &:after {
-        content: '';
-        position: absolute;
-        width: 1px;
-        background-color: #ff960b;
-        opacity: 0.3;
-        top: 0;
-        bottom: 45px;
-    }
-
     .stepsContainer {
         display: flex;
         flex-direction: column-reverse;
