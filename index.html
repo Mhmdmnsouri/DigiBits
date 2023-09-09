@@ -11,19 +11,20 @@
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
     <section id="home" class="home" style="background-image: url(images/bg1.webp);">
         <nav class="menu">
-            <img src="images/logo.png" class="logo">
+            <h1>DigiBits</h1>
             <ul class="navHeader">
                 <li><a href="#" class="link homeLink">Home</a></li>
+                <li><a href="#" class="link definition">Definition</a></li>
+                <li><a href="#" class="link nftShop">NFT Shop</a></li>
                 <li><a href="#" class="link topCoins">Top Coins</a></li>
-                <li><a href="#" class="link whitePaper">White Paper</a></li>
                 <li><a href="#" class="link roadMap">Road Map</a></li>
                 <li><a href="#" class="link Blockchain">Blockchain</a></li>
-                <li><a href="#" class="link nftShop">NFT Shop</a></li>
             </ul>
             <button class="burger">
                 <i class="fas fa-bars bars"></i>
@@ -31,37 +32,37 @@
             </button>
         </nav>
         <div class="homeContent">
-            <div>
+            <div class="animate__animated animate__fadeInLeft">
                 <h1>BUY &<br>SELL <span>Crypto</span></h1>
                 <p>World's biggest Cryptocurrency exchange availible on web<br>as well as mobile phone.</p>
             </div>
-            <div class="btcReleaseContainer">
+            <div class="btcReleaseContainer animate__animated animate__fadeInLeft">
                 <h2>How old is the Bitcoin?</h2>
                 <div class="timeContainer">
                     <div class="timePart">
-                        <span id="years">10</span>
+                        <span id="years"></span>
                         <h6>Years</h6>
                     </div>
                     <div class="timePart">
-                        <span id="months">07</span>
+                        <span id="months"></span>
                         <h6>Months</h6>
                     </div>
                     <div class="timePart">
-                        <span id="days">03</span>
+                        <span id="days"></span>
                         <h6>Days</h6>
                     </div>
                 </div>
             </div>
             <div>
-                <a href="#" class="btn buyBtcBtn">Buy BTC</a>
-                <a href="https://bitcoin.org/bitcoin.pdf" class="btn whitePaperBtn" target="_blank"><i
-                        class="fas fa-file-pdf"></i>
+                <a href="#" class="btn buyBtcBtn animate__animated animate__flipInX">Buy BTC</a>
+                <a href="https://bitcoin.org/bitcoin.pdf" class="btn whitePaperBtn animate__animated animate__flipInX"
+                    target="_blank"><i class="fas fa-file-pdf"></i>
                     Bitcoin White Paper</a>
             </div>
         </div>
     </section>
 
-    <section class="definition section">
+    <section id="definition" class="definition section">
         <div class="subjectsContainer" onclick="selectedBtn(event)">
             <button class="subjectItem btn active" id="btc" onclick="defgenerator(btc)">BITCOIN</button>
             <button class="subjectItem btn" id="eth" onclick="defgenerator(eth)">ETHEREUM</button>
@@ -70,7 +71,8 @@
             <button class="subjectItem btn" id="defi" onclick="defgenerator(defi)">DEFI</button>
         </div>
         <div class="definitionContainer">
-            <p class="textDefinition">Bitcoin (BTC) was invented by a pseudonymous individual or group named Satoshi
+            <p class="textDefinition">Bitcoin (BTC) was invented by a pseudonymous
+                individual or group named Satoshi
                 Nakamoto in 2008 and is the world’s first enduring cryptocurrency that succeeded where decades of
                 digital cash experiments failed.
 
@@ -86,41 +88,13 @@
         </div>
     </section>
 
-    <!-- <section class="marketNews section">
-        <div class="marketNewsHeader">
-            <h2 class="title">Market News</h2>
-            <button class="btn">Explore More <i class="fas fa-arrow-right"></i></button>
-        </div>
-        <div class="newsContentContainer">
-            <div class="itemContainer">
-                <img src="images/bg3.jpg" class="image">
-                <h3>Experts Say Bitcoin Could Hit $100,000 In 2024</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sed.</p>
-                <button class="btn">READ MORE</button>
-            </div>
-            <div class="itemContainer">
-                <img src="images/bg5.jpg" class="image">
-                <h3>The Future of Metaverse in 2030</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, sed.</p>
-                <button class="btn">READ MORE</button>
-            </div>
-            <div class="itemContainer">
-                <img src="images/bg5.jpg" class="image">
-                <h3>Biden's Crypto Executive Order</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, quibusdam.</p>
-                <button class="btn">READ MORE</button>
-            </div>
-        </div>
-
-    </section> -->
-
     <section id="NftSection" class="Nfts section">
         <div class="nftsHeader">
             <h2 class="title">Explore NFTs</h2>
             <button class="btn">Explore More <i class="fas fa-arrow-right"></i></button>
         </div>
         <div class="nftsContainer">
-            <div class="nftsItem">
+            <div class="nftsItem nftsItem1">
                 <img src="images/nfts1.webp">
                 <h3 class="nftsName">The Isobemble</h3>
                 <div class="nftsInfo">
@@ -128,7 +102,7 @@
                     <button class="btn">Buy</button>
                 </div>
             </div>
-            <div class="nftsItem">
+            <div class="nftsItem nftsItem2">
                 <img src="images/nfts2.webp">
                 <h3 class="nftsName">The Isobelixia</h3>
                 <div class="nftsInfo">
@@ -136,7 +110,7 @@
                     <button class="btn">Buy</button>
                 </div>
             </div>
-            <div class="nftsItem">
+            <div class="nftsItem nftsItem3">
                 <img src="images/nfts3.webp">
                 <h3 class="nftsName">The Toadstallsobel</h3>
                 <div class="nftsInfo">
@@ -144,127 +118,12 @@
                     <button class="btn">Buy</button>
                 </div>
             </div>
-            <div class="nftsItem">
+            <div class="nftsItem nftsItem4">
                 <img src="images/nfts4.webp">
                 <h3 class="nftsName">The Oquinnatoria</h3>
                 <div class="nftsInfo">
                     <h5 class="nftsPrice">0.03 ETH <i class="fa-brands fa-ethereum"></i></h5>
                     <button class="btn">Buy</button>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <section id="RoadmapSection" class="roadmap section">
-        <h2 class="title">Roadmap<i class="fa fa-roadmap"></i></h2>
-        <div class="roadmapContainer">
-            <div class="steps">
-                <div class="stepsContainer">
-                    <div class="stepContent">
-                        <h3 class="titleItem">Bitcoin Whitepaper Published</h3>
-                        <p class="textItem">In 2008, Bitcoin creator Satoshi Nakamoto published a whitepaper outlining
-                            the technical aspects of Bitcoin, labeling it "a peer-to-peer version of electronic cash."
-                        </p>
-                    </div>
-                    <i class="step-line"></i>
-                    <div class="date">2008</div>
-                </div>
-                <div class="stepsContainer">
-                    <div class="stepContent">
-                        <h3 class="titleItem">Bitcoin Network Launches</h3>
-                        <p class="textItem">Though Bitcoin's whitepaper was published in 2008, Nakamoto did not
-                            release Bitcoin's software until January 2009. That release allowed Bitcoin miners to start
-                            the Bitcoin network, generate Bitcoin, and confirm transactions for the first time.</p>
-                    </div>
-                    <i class="step-line"></i>
-                    <div class="date">2009</div>
-                </div>
-                <div class="stepsContainer">
-                    <div class="stepContent">
-                        <h3 class="titleItem">Nakamoto Leaves Bitcoin</h3>
-                        <p class="textItem">In 2010, Nakamoto went offline. He passed control of Bitcoin's codebase
-                            to Gavin Andresen, who became one of the most significant early Bitcoin developers.
-                            Nakamoto's departure also led to division within the cryptocurrency community, as no single
-                            developer had Nakamoto's level of authority.</p>
-                    </div>
-                    <i class="step-line"></i>
-                    <div class="date">2010</div>
-                </div>
-                <div class="stepsContainer">
-                    <div class="stepContent">
-                        <h3 class="titleItem">Black Markets & BitPay</h3>
-                        <p class="textItem">In 2011, the dark net market Silk Road opened and allowed Bitcoin as a
-                            payment option. Though the FBI shut down the site and seized its Bitcoin in 2013, the Silk
-                            Road inspired other dark net markets to make use of Bitcoin.</p>
-                    </div>
-                    <i class="step-line"></i>
-                    <div class="date">2011</div>
-                </div>
-                <div class="stepsContainer">
-                    <div class="stepContent">
-                        <h3 class="titleItem">Bitcoin's First Halving</h3>
-                        <p class="textItem">In 2012, Bitcoin underwent its first "halving." This event cut block rewards
-                            in half (from 50 BTC to 25 BTC) in order to discourage Bitcoin mining and reduce inflation.
-                            The halving seemingly worked as intended: the price of BTC rose from $12 to $650 over the
-                            four-year period that followed the halving.</p>
-                    </div>
-                    <i class="step-line"></i>
-                    <div class="date">2012</div>
-                </div>
-                <div class="stepsContainer">
-                    <div class="stepContent">
-                        <h3 class="titleItem">First Bitcoin ATMs</h3>
-                        <p class="textItem">In October 2013, the world's first Bitcoin ATM was installed in Vancouver,
-                            BC, Canada. Other early ATMs were installed in Bratislava, Slovakia in October 2013, and in
-                            Albuquerque, New Mexico in February 2014. As of October 2020, there are over 3.5 million
-                            Bitcoin ATMs in operation across the world.</p>
-                    </div>
-                    <i class="step-line"></i>
-                    <div class="date">2013</div>
-                </div>
-                <div class="stepsContainer">
-                    <div class="stepContent">
-                        <h3 class="titleItem">Bitcoin's Second Halving</h3>
-                        <p class="textItem">Bitcoin underwent its second halving in 2012 and reduced its block reward
-                            from 25 BTC to 12.5 BTC. Once again, reduced inflation had its intended effect: BTC prices
-                            rose from $650 to roughly $8000 over the four years between halvings.</p>
-                    </div>
-                    <i class="step-line"></i>
-                    <div class="date">2016</div>
-                </div>
-                <div class="stepsContainer">
-                    <div class="stepContent">
-                        <h3 class="titleItem">Bitcoin Price Surge & Crash
-                        </h3>
-                        <p class="textItem">By the end of 2017, Bitcoin reached an all-time high of $19,700. However,
-                            Bitcoin prices fell rapidly over the course of 2018, reaching $3700 by the end of the year.
-                            Since then, Bitcoin prices have partially recovered: BTC is currently worth $13,000.</p>
-                    </div>
-                    <i class="step-line"></i>
-                    <div class="date">2018</div>
-                </div>
-                <div class="stepsContainer">
-                    <div class="stepContent">
-                        <h3 class="titleItem">Bakkt Launches</h3>
-                        <p class="textItem">2019 saw the launch of one of the most anticipated Bitcoin projects: Bakkt.
-                            Unlike standard crypto exchanges, Bakkt does not handle actual Bitcoin; instead, it sells
-                            investment contracts, or futures. The launch of Bakkt marked a regulatory milestone for
-                            crypto startups that aim to serve institutional investors.</p>
-                    </div>
-                    <i class="step-line"></i>
-                    <div class="date">2019</div>
-                </div>
-                <div class="stepsContainer">
-                    <div class="stepContent">
-                        <h3 class="titleItem">Flash Crash, Halving, & PayPal Adoption</h3>
-                        <p class="textItem">2020 has proven to be an eventful year for Bitcoin. Various factors caused a
-                            "flash crash" in March, while May marked Bitcoin's third halving. Most notable though, is
-                            PayPal's recent decision to buy and sell Bitcoin on its payments website—a level of
-                            mainstream adoption that has never been seen before.</p>
-                    </div>
-                    <i class="step-line"></i>
-                    <div class="date">2020 </div>
                 </div>
             </div>
         </div>
@@ -286,7 +145,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr class="row1">
                         <td>1</td>
                         <td><img src="images/1.png" class="topCoinIcon">
                             <h4 id="coinName1"></h4><span id="coinSymbol1"></span>
@@ -296,7 +155,7 @@
                         <td id="coinATH1" class="mobileHide"></td>
                         <td id="coinCS1" class="mobileHide"></td>
                     </tr>
-                    <tr>
+                    <tr class="row2">
                         <td>2</td>
                         <td><img src="images/2.png" class="topCoinIcon">
                             <h4 id="coinName2"></h4> <span id="coinSymbol2"></span>
@@ -306,7 +165,7 @@
                         <td id="coinATH2" class="mobileHide"></td>
                         <td id="coinCS2" class="mobileHide"> </td>
                     </tr>
-                    <tr>
+                    <tr class="row3">
                         <td>3</td>
                         <td><img src="images/3.png" class="topCoinIcon">
                             <h4 id="coinName3"></h4> <span id="coinSymbol3"></span>
@@ -316,7 +175,7 @@
                         <td id="coinATH3" class="mobileHide"></td>
                         <td id="coinCS3" class="mobileHide"></td>
                     </tr>
-                    <tr>
+                    <tr class="row4">
                         <td>4</td>
                         <td><img src="images/4.png" class="topCoinIcon">
                             <h4 id="coinName4"></h4> <span id="coinSymbol4"></span>
@@ -326,7 +185,7 @@
                         <td id="coinATH4" class="mobileHide"></td>
                         <td id="coinCS4" class="mobileHide"></td>
                     </tr>
-                    <tr>
+                    <tr class="row5">
                         <td>5</td>
                         <td><img src="images/5.png" class="topCoinIcon">
                             <h4 id="coinName5"></h4> <span id="coinSymbol5"></span>
@@ -391,8 +250,123 @@
         </div>
     </section>
 
-    <section class="calculator section">
-        <!-- <h2 class="title">Bitcoin Calculator</h2>
+    <section id="RoadmapSection" class="roadmap section">
+        <h2 class="title">Roadmap<i class="fa fa-roadmap"></i></h2>
+        <div class="roadmapContainer">
+            <div class="steps">
+                <div class="stepsContainer step1">
+                    <div class="stepContent">
+                        <h3 class="titleItem">Bitcoin Whitepaper Published</h3>
+                        <p class="textItem">In 2008, Bitcoin creator Satoshi Nakamoto published a whitepaper outlining
+                            the technical aspects of Bitcoin, labeling it "a peer-to-peer version of electronic cash."
+                        </p>
+                    </div>
+                    <i class="step-line"></i>
+                    <div class="date">2008</div>
+                </div>
+                <div class="stepsContainer step2">
+                    <div class="stepContent">
+                        <h3 class="titleItem">Bitcoin Network Launches</h3>
+                        <p class="textItem">Though Bitcoin's whitepaper was published in 2008, Nakamoto did not
+                            release Bitcoin's software until January 2009. That release allowed Bitcoin miners to start
+                            the Bitcoin network, generate Bitcoin, and confirm transactions for the first time.</p>
+                    </div>
+                    <i class="step-line"></i>
+                    <div class="date">2009</div>
+                </div>
+                <div class="stepsContainer step3">
+                    <div class="stepContent">
+                        <h3 class="titleItem">Nakamoto Leaves Bitcoin</h3>
+                        <p class="textItem">In 2010, Nakamoto went offline. He passed control of Bitcoin's codebase
+                            to Gavin Andresen, who became one of the most significant early Bitcoin developers.
+                            Nakamoto's departure also led to division within the cryptocurrency community, as no single
+                            developer had Nakamoto's level of authority.</p>
+                    </div>
+                    <i class="step-line"></i>
+                    <div class="date">2010</div>
+                </div>
+                <div class="stepsContainer step4">
+                    <div class="stepContent">
+                        <h3 class="titleItem">Black Markets & BitPay</h3>
+                        <p class="textItem">In 2011, the dark net market Silk Road opened and allowed Bitcoin as a
+                            payment option. Though the FBI shut down the site and seized its Bitcoin in 2013, the Silk
+                            Road inspired other dark net markets to make use of Bitcoin.</p>
+                    </div>
+                    <i class="step-line"></i>
+                    <div class="date">2011</div>
+                </div>
+                <div class="stepsContainer step5">
+                    <div class="stepContent">
+                        <h3 class="titleItem">Bitcoin's First Halving</h3>
+                        <p class="textItem">In 2012, Bitcoin underwent its first "halving." This event cut block rewards
+                            in half (from 50 BTC to 25 BTC) in order to discourage Bitcoin mining and reduce inflation.
+                            The halving seemingly worked as intended: the price of BTC rose from $12 to $650 over the
+                            four-year period that followed the halving.</p>
+                    </div>
+                    <i class="step-line"></i>
+                    <div class="date">2012</div>
+                </div>
+                <div class="stepsContainer step6">
+                    <div class="stepContent">
+                        <h3 class="titleItem">First Bitcoin ATMs</h3>
+                        <p class="textItem">In October 2013, the world's first Bitcoin ATM was installed in Vancouver,
+                            BC, Canada. Other early ATMs were installed in Bratislava, Slovakia in October 2013, and in
+                            Albuquerque, New Mexico in February 2014. As of October 2020, there are over 3.5 million
+                            Bitcoin ATMs in operation across the world.</p>
+                    </div>
+                    <i class="step-line"></i>
+                    <div class="date">2013</div>
+                </div>
+                <div class="stepsContainer step7">
+                    <div class="stepContent">
+                        <h3 class="titleItem">Bitcoin's Second Halving</h3>
+                        <p class="textItem">Bitcoin underwent its second halving in 2012 and reduced its block reward
+                            from 25 BTC to 12.5 BTC. Once again, reduced inflation had its intended effect: BTC prices
+                            rose from $650 to roughly $8000 over the four years between halvings.</p>
+                    </div>
+                    <i class="step-line"></i>
+                    <div class="date">2016</div>
+                </div>
+                <div class="stepsContainer step8">
+                    <div class="stepContent">
+                        <h3 class="titleItem">Bitcoin Price Surge & Crash
+                        </h3>
+                        <p class="textItem">By the end of 2017, Bitcoin reached an all-time high of $19,700. However,
+                            Bitcoin prices fell rapidly over the course of 2018, reaching $3700 by the end of the year.
+                            Since then, Bitcoin prices have partially recovered: BTC is currently worth $13,000.</p>
+                    </div>
+                    <i class="step-line"></i>
+                    <div class="date">2018</div>
+                </div>
+                <div class="stepsContainer step9">
+                    <div class="stepContent">
+                        <h3 class="titleItem">Bakkt Launches</h3>
+                        <p class="textItem">2019 saw the launch of one of the most anticipated Bitcoin projects: Bakkt.
+                            Unlike standard crypto exchanges, Bakkt does not handle actual Bitcoin; instead, it sells
+                            investment contracts, or futures. The launch of Bakkt marked a regulatory milestone for
+                            crypto startups that aim to serve institutional investors.</p>
+                    </div>
+                    <i class="step-line"></i>
+                    <div class="date">2019</div>
+                </div>
+                <div class="stepsContainer step10">
+                    <div class="stepContent">
+                        <h3 class="titleItem">Flash Crash, Halving, & PayPal Adoption</h3>
+                        <p class="textItem">2020 has proven to be an eventful year for Bitcoin. Various factors caused a
+                            "flash crash" in March, while May marked Bitcoin's third halving. Most notable though, is
+                            PayPal's recent decision to buy and sell Bitcoin on its payments website—a level of
+                            mainstream adoption that has never been seen before.</p>
+                    </div>
+                    <i class="step-line"></i>
+                    <div class="date">2020 </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- <section class="calculator section"> -->
+    <!-- <h2 class="title">Bitcoin Calculator</h2>
         <div class="calculatorContainer flex">
             <div class="flex calPart">
                 <input type="text" id="userInput" placeholder="Please Enter">
@@ -401,11 +375,7 @@
             </div>
             <img src="images/money5.webp">
         </div> -->
-    </section>
-
-    <!-- <section class="status section">
-        <h2 class="title">Status</h2>
-    </section> -->
+    <!-- </section> -->
 
 
     <section id="BlockchainSection" class="feature section">
@@ -453,11 +423,34 @@
         </div>
     </section>
 
-    <section class="subscribe section">
-        <h2 class="title">Subscribe</h2>
-    </section>
-
-    <footer></footer>
+    <footer class="section">
+        <div class="footerContainer">
+            <div class="footerInfo">
+                <div class="footerInfoTitle flex">
+                    <img src="images/logo.png">
+                    <h2>DigiBits</h2>
+                </div>
+                <p>Cointelegraph covers fintech, blockchain and Bitcoin bringing you the latest crypto news and analyses
+                    on the future of money.</p>
+                <div class="social">
+                    <a href="#https://linkedin.com/in/Mhmdmnsouri"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#https://github.com/Mhmdmnsouri"><i class="fa-brands fa-github"></i></a>
+                    <a href="#mailto:Mhmdmnsourix@gmail.com"><i class="fa fa-envelope"></i></a>
+                    <a href="#https://instagram.com/Mhmdmnsourix"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+            <div class="footerSubscribe">
+                <h4>SUBSCRIBE FOR NEWSLETTER </h4>
+                <div class="subscribeBox">
+                    <input type="text" placeholder="Enter your email">
+                    <button class="btn">Subscribe</button>
+                </div>
+                <p>Copyright ©2023 Bayya All Rights Reserved <br>Created with <i class="fa fa-heart"></i> by <a
+                        href="https://github.com/Mhmdmnsouri" class="link">Mhmdmnsouri</a></p>
+            </div>
+        </div>
+    </footer>
 
 
     <script src="script.js"></script>
