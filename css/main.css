@@ -503,6 +503,7 @@ footer .footerContainer .footerSubscribe .subscribeBox input {
   border-radius: 5px;
   outline: none;
   box-sizing: border-box;
+  border: 0;
 }
 footer .footerContainer .footerSubscribe .subscribeBox button {
   padding: 8px 16px !important;
