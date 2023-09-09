@@ -1,10 +1,123 @@
+$(window).scroll(function () {
+    var wh = $(window).height() - 50;
+    if ($(window).scrollTop() > $('.definition').offset().top - wh) {
+        $('.subjectsContainer').addClass('animate__animated animate__fadeInDown');
+        $('.textDefinition').addClass('animate__animated animate__fadeInLeft');
+    }
+});
+$(window).scroll(function () {
+    var wh = $(window).height() - 50;
+    if ($(window).scrollTop() > $('.Nfts').offset().top - wh) {
+        $('.nftsItem1').addClass('animate__animated animate__fadeInUp');
+        $('.nftsItem2').addClass('animate__animated animate__fadeInDown');
+        $('.nftsItem3').addClass('animate__animated animate__fadeInUp');
+        $('.nftsItem4').addClass('animate__animated animate__fadeInDown');
+    }
+});
+// $(window).scroll(function () {
+//     var wh = $(window).height() - 50;
+//     if ($(window).scrollTop() > $('.topCoins').offset().top - wh) {
+//         $('.row1').addClass('animate__animated animate__fadeInLeft');
+//     }
+// });
+$(window).scroll(function () {
+    var wh = $(window).height() - 50;
+    if ($(window).scrollTop() > $('.roadmap').offset().top - wh) {
+        $('.step1').addClass('animate__animated animate__fadeInRight');
+        $('.step2').addClass('animate__animated animate__fadeInLeft');
+        $('.step3').addClass('animate__animated animate__fadeInRight');
+        $('.step4').addClass('animate__animated animate__fadeInLeft');
+        $('.step5').addClass('animate__animated animate__fadeInRight');
+        $('.step6').addClass('animate__animated animate__fadeInLeft');
+        $('.step7').addClass('animate__animated animate__fadeInRight');
+        $('.step8').addClass('animate__animated animate__fadeInLeft');
+        $('.step9').addClass('animate__animated animate__fadeInRight');
+        $('.step10').addClass('animate__animated animate__fadeInLeft');
+    }
+});
+
+$(window).scroll(function () {
+    var wh = $(window).height() - 50;
+    if ($(window).scrollTop() > $('.featureItem').offset().top - wh) {
+        $('.featureItem').addClass('animate__animated  animate__zoomIn');
+    }
+});
+
 $(document).ready(() => {
     $('.topCoins').on('click', () => {
         $('html, body').animate({
             scrollTop: $('#TopCoinsSection').offset().top
         }, 1000);
     });
+    $('.definition').on('click', () => {
+        $('html, body').animate({
+            scrollTop: $('#definition').offset().top
+        }, 1000);
+    });
+    $('.nftShop').on('click', () => {
+        $('html, body').animate({
+            scrollTop: $('#NftSection').offset().top
+        }, 1000);
+    });
+    $('.roadMap').on('click', () => {
+        $('html, body').animate({
+            scrollTop: $('#RoadmapSection').offset().top
+        }, 1000);
+    });
+    $('.Blockchain').on('click', () => {
+        $('html, body').animate({
+            scrollTop: $('#BlockchainSection').offset().top
+        }, 1000);
+    });
 });
+
+let yearsElem = document.getElementById('years');
+let monthsElem = document.getElementById('months');
+let daysElem = document.getElementById('days');
+
+function bitcoinAge() {
+    function getDaysInMonth(year, month) {
+        return new Date(year, month, 0).getDay();
+    }
+    let bitcoinLunched = new Date('2009-01-12');
+    const y1 = bitcoinLunched.getFullYear();
+    const m1 = bitcoinLunched.getMonth() + 1;
+    const d1 = bitcoinLunched.getDate();
+
+    let today = new Date();
+    let y2 = today.getFullYear();
+    let m2 = today.getMonth() + 1;
+    let d2 = today.getDate();
+
+    let y3, m3, d3;
+    y3 = y2 - y1;
+
+    if (m2 >= m1) {
+        m3 = m2 - m1;
+    }
+    else {
+        y3--;
+        m3 = 12 + m2 - m1;
+    }
+    if (d2 >= d1) {
+        d3 = d2 - d1;
+    }
+    else {
+        m3--;
+        d3 = getDaysInMonth(y1, m1) + d2 - d1;
+    }
+    if (m3 < 0) {
+        m3 = 11;
+        y3--;
+    }
+
+    yearsElem.innerHTML = y3;
+    monthsElem.innerHTML = m3;
+    daysElem.innerHTML = d3;
+}
+
+bitcoinAge();
+
 
 let coinName1Elem = document.getElementById('coinName1');
 let coinName2Elem = document.getElementById('coinName2');
